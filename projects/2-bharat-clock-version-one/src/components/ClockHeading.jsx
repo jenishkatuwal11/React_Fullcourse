@@ -1,3 +1,3 @@
 export default function ClockHeading() {
-  return <h1>Clock</h1>;
+  return <h1 className="fw-bolder">Clock</h1>;
 }
