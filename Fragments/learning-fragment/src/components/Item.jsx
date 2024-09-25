@@ -1,8 +1,11 @@
 import PropTypes from "prop-types";
+import styles from "./Item.module.css";
 const Item = ({ foodItem }) => {
   return (
     <>
-      <li className="list-group-item">{foodItem}</li>
+      <li className={`list-group-item ${styles["kg-item"]}`}>
+        <span className="kg-span">{foodItem}</span>
+      </li>
     </>
   );
 };
