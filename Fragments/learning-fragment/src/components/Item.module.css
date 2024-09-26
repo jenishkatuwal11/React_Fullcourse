@@ -1,7 +1,7 @@
-.list-group-item.kg-item {
+.kg-item {
   background: #c98383;
 }
 
-.list-group-item .kg-span {
+.kg-span {
   font-weight: 700;
 }
