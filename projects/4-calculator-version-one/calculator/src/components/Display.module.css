@@ -1,0 +1,15 @@
+.display {
+  margin: 15px auto; /* Center the display with margin */
+  width: 100%; /* Full width inside the calculator */
+  height: 60px; /* Set height to ensure consistent size */
+  padding: 10px 15px; /* Add padding for spacing */
+  background-color: #333; /* Dark background for the display */
+  color: #fff; /* White text for contrast */
+  font-size: 32px; /* Increased font size for readability */
+  font-family: "Courier New", Courier, monospace; /* Use a monospace font for a digital look */
+  text-align: right; /* Align text to the right like a traditional calculator */
+  border-radius: 8px; /* Slightly rounded corners */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); /* Inset shadow for a sunken effect */
+  overflow: hidden; /* Ensure overflow content is hidden if too long */
+  box-sizing: border-box; /* Include padding and border in the element's width */
+}

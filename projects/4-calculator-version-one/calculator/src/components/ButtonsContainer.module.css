@@ -1,0 +1,36 @@
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 300px; /* Limit the width to make the button layout more compact */
+  margin: 0 auto; /* Center the container */
+  gap: 10px; /* Add consistent gap between buttons */
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  background-color: #4caf50; /* Green background */
+  border: none;
+  color: white;
+  font-size: 18px; /* Make the text larger */
+  font-weight: bold;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slight zoom-in on hover */
+}
+
+.button:active {
+  transform: scale(0.95); /* Slight shrink on click */
+}
+
+.button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5); /* Green focus shadow */
+}
