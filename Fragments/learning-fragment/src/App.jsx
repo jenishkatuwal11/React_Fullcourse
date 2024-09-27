@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import FoodItems from "./components/FoodItems";
 import Errormessage from "./components/Errormessage";
 import Container from "./components/Container";
+import FoodInput from "./components/FoodInput";
 function App() {
   let foodItems = [
     "Daal",
@@ -19,6 +20,7 @@ function App() {
   return (
     <Container>
       <h1 style={{ background: "cornflowerblue" }}>Healthy Food List</h1>
+      <FoodInput />
       <Errormessage food={foodItems} />
       <FoodItems food={foodItems} />
     </Container>
