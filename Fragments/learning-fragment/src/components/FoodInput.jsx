@@ -1,8 +1,6 @@
+import PropTypes from "prop-types";
 import styles from "./FoodInput.module.css";
-const FoodInput = () => {
-  const handleOnChange = (event) => {
-    console.log(event.target.value);
-  };
+const FoodInput = ({ handleOnChange }) => {
   return (
     <div>
       <input
@@ -15,4 +13,7 @@ const FoodInput = () => {
   );
 };
 
+FoodInput.propTypes = {
+  handleOnChange: PropTypes.string.isRequired,
+};
 export default FoodInput;

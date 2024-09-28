@@ -17,10 +17,14 @@ function App() {
     "Saag",
     "Kalo Daal",
   ];
+
+  const handleOnChange = (event) => {
+    console.log(event.target.value);
+  };
   return (
     <Container>
       <h1 style={{ background: "cornflowerblue" }}>Healthy Food List</h1>
-      <FoodInput />
+      <FoodInput handleOnChange={handleOnChange} />
       <Errormessage food={foodItems} />
       <FoodItems food={foodItems} />
     </Container>
