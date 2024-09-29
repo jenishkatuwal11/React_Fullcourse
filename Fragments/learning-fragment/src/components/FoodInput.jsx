@@ -1,19 +1,19 @@
 import PropTypes from "prop-types";
 import styles from "./FoodInput.module.css";
-const FoodInput = ({ handleOnChange }) => {
+const FoodInput = ({ handleKeyDown }) => {
   return (
     <div>
       <input
         type="text"
         placeholder="Enter Your Items"
         className={styles.foodInput}
-        onChange={handleOnChange}
+        onKeyDown={handleKeyDown}
       />
     </div>
   );
 };
 
 FoodInput.propTypes = {
-  handleOnChange: PropTypes.string.isRequired,
+  handleKeyDown: PropTypes.func.isRequired,
 };
 export default FoodInput;

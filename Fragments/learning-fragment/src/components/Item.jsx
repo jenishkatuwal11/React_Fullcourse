@@ -7,7 +7,7 @@ const Item = ({ foodItem, handleBuyButton }) => {
       <span className={styles["kg-span"]}>{foodItem}</span>
       <button
         className={`${styles.button} btn btn-info`}
-        onClick={handleBuyButton}
+        onClick={handleBuyButton} // Function passed here
       >
         Buy
       </button>
@@ -17,7 +17,7 @@ const Item = ({ foodItem, handleBuyButton }) => {
 
 Item.propTypes = {
   foodItem: PropTypes.string.isRequired,
-  handleBuyButton: PropTypes.string.isRequired,
+  handleBuyButton: PropTypes.func.isRequired, // Should be 'func' instead of 'string'
 };
 
 export default Item;
