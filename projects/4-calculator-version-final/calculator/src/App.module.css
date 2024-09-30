@@ -1,0 +1,15 @@
+/* .calculator {
+  border: 1px solid rgb(230, 139, 139);
+  width: 350px;
+  border-radius: 5px;
+} */
+
+.calculator {
+  border: 1px solid rgb(230, 139, 139);
+  width: 350px;
+  border-radius: 10px; /* Increase the rounding for a softer look */
+  padding: 20px; /* Add some padding to space the content inside */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 50px auto; /* Center the calculator on the page with some top margin */
+}
