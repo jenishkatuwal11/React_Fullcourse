@@ -1,6 +1,7 @@
+import PropTypes from "prop-types";
 import styles from "./ButtonsContainer.module.css";
 
-const ButtonsContainer = () => {
+const ButtonsContainer = ({ onButtonClick }) => {
   const buttonNames = [
     "C",
     "1",
@@ -24,12 +25,20 @@ const ButtonsContainer = () => {
   return (
     <div className={styles.buttonContainer}>
       {buttonNames.map((name, index) => (
-        <button key={index} className={styles.button}>
+        <button
+          key={index}
+          className={styles.button}
+          onClick={() => onButtonClick(name)}
+        >
           {name}
         </button>
       ))}
     </div>
   );
+};
+
+ButtonsContainer.propTypes = {
+  onButtonClick: PropTypes.string.isRequired, // Expect displayValue to be a string
 };
 
 export default ButtonsContainer;
